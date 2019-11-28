@@ -7,8 +7,9 @@
 
 ### EdgeDetection
 * Sobel, Roberts, Prewitt 등의 Edge Detection을 구현한 소스
-
+  * Main에서 algorithm 변경 필요  
   * Run Configuration을 통해 입력 인자2개 필요
+
   
 ### FractalTree
 * 프렉탈 트리 구현한 GUI 프로그램
