@@ -2,6 +2,8 @@
 
 ## Introduction
 다양한 이미지 프로세싱을 구현
+
+<br>
   
 ## Contents (in JAVA)
 
@@ -11,7 +13,6 @@
 
   * Main에서 algorithm 변경 필요  
   * Run Configuration을 통해 입력 인자2개 필요
-
   
 ### FractalTree
 * 프렉탈 트리 구현한 GUI 프로그램
@@ -19,6 +20,6 @@
 ### Sobel-Filter-Edge-Detection
 * 소벨 필터를 이용한 자바 소스
 
-
+<br>
 
 ## Contents (in C++)
