@@ -13,7 +13,7 @@
 
 ### Sobel-Filter-Edge-Detection
 * 소벨 필터를 이용한 자바 소스
-** Run Configuration을 통해 입력 인자2개 필요
+  * Run Configuration을 통해 입력 인자2개 필요
 
 
 ## Contents (in C++)
