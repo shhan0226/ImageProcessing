@@ -8,7 +8,7 @@
 ## Contents (in JAVA)
 
 ### Basics
-* 기본적인 이미지 입출력 
+* 기본적인 이미지 입출력 및 이미지 파일 수정 소스
 
 ### EdgeDetection
 
