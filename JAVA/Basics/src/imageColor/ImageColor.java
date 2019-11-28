@@ -1,0 +1,64 @@
+package imageColor;
+
+import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
+import javax.imageio.ImageIO;
+
+/*이미지 흑백으로 변환 및 가로 세로 열 입력*/
+
+public class ImageColor {
+	
+	static int greenBlue = new Color(50, 100, 200).getRGB();
+
+	public static void main(String[] args) {
+		BufferedImage image = null;
+		try {
+			image = ImageIO.read(new File("img\\origin.jpg"));
+			getRed(image);
+			getRGBColor(image);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	public static void getRed(BufferedImage image) {
+		int width = image.getWidth();
+		int height = image.getHeight();
+		
+		for(int w = 0; w < width; w++) {
+			for(int h =0; h <height; h++) {
+				image.setRGB(w, h, greenBlue);
+			}
+		}
+		
+		try {
+			ImageIO.write(image, "jpg", new File("img\\result.jpg"));	
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+	
+	public static void getRGBColor(BufferedImage image) {
+		int width = image.getWidth();
+		int height = image.getHeight();
+		
+		for(int w = 0; w < width; w++) {
+			for(int h =0; h <height; h++) {
+				int Colors = image.getRGB(w, h);
+				int R1 = (Colors & 0xff0000) >> 16;
+				int G1 = (Colors & 0xff00) >> 8;
+				int B1 = Colors & 0xff;				
+				int A1 = (Colors & 0xff000000) >>> 24;				
+				
+				
+				System.out.println("R:"+ R1 + " G:" + G1 + " B:" + B1 + " Ap:" +A1);
+			}
+		}					
+	}
+
+}

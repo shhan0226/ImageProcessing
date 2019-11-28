@@ -1,0 +1,5 @@
+package sobel;
+
+public class SobelEdge {
+
+}
